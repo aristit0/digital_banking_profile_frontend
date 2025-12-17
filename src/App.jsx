@@ -31,7 +31,7 @@ function App() {
     
     try {
       const ids = customerIds.split(',').map(id => id.trim()).filter(id => id)
-      const response = await axios.post('http://localhost:8080/api/v1/customers', {
+      const response = await axios.post('http://localhost:2113/api/v1/customers', {
         customer_id: ids
       })
 
